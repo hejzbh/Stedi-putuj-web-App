@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+
+    <script defer src="./script.js"></script>
+
+      <!--Font awesome, fonts and ...-->
+      <script src="https://kit.fontawesome.com/22f5ba3980.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <div class="about__balance">
+            <div class="top__cont">
+                <input type="text" placeholder="Azuriraj svoj balance" class="balance__input">
+            <button class="submitBtn">Submit</button>
+            </div>
+            <p class="balance">0</p>
+        </div>
+
+
+        <!--ERROR CAUGHT-->
+        <div class="error__message">
+            <p class="error_msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, eligendi!</p>
+        </div>
+        <nav>
+            <div class="inner__nav container">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                    <p class="a">Štedi <span>putuj</span></p>
+                </div>
+
+                <ul class="nav__options">
+            
+                   <li class="burger"><i class="fa-solid fa-bars-staggered fa__burger icon"></i>
+                    <i class="fa-solid fa-xmark fa__burger hidden icon"></i>
+                </li>
+                    <li><img src="./images/user.png" alt="Your photo"></li>
+                </ul>
+            </div>
+        </nav>
+<!--
+
+    const info = document.querySelector('.info');
+const nameOfCountry = document.querySelector('.nameOfCountry');
+const dateText = document.querySelector('.date__place');
+const kolikoOstalo = document.querySelector('.jos');
+const moneyText = document.querySelector('.moneyPlace');
+const moneySave = document.querySelector('.moneyInt');
+-->
+
+        <div class="info">
+            <div class="closeInfo"></div>
+         <div class="info__inner">
+            <div class="bg">
+                <p>Ready for <span class="nameOfCountry">imeDržave</span></p>
+            </div>
+            <div class="under smallCont">
+               <div class="infoRow first__row">
+                   <div class="activity">
+                    <span class="date__place">14.04.13</span>
+                    <h1>Activity
+                    </h1>
+                  
+                   </div>
+
+                   <div class="button__place">
+                       <p class="showdays">Još <span class="jos"></span> dana</p>
+                    <button class="timeBtn"><i class="fa-solid fa-hourglass"></i></button>
+                   </div>
+               </div>
+
+               <div class="infoRow second__row">
+                   <p>Money for travel</p>
+                   <div class="box">
+                       <p class="moneyPlace">$1400</p>
+                       <div class="line"></div>
+                   </div>
+               </div>
+               <div class="infoRow three__row">
+                <p>Save</p>
+                <div class="box">
+                    <p><span class="moneyInt">40$</span><span class="perDay">/per day</span></p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="infoRow fourth__row">
+                <p>Your currency > country currency</p>
+                <div class="box">
+                    <p><span class="yourCurrPlace">40$</span><span> / </span><span class="countryCurrPlace">40$</span></p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="infoRow five__row">
+                <p>How can I save money for this trip?</p>
+                <select class="howToSave">
+                    <option class="test" value="save">Make a monthly savings plan</option>
+                    <option value="save">Get a cash register</option>
+                    <option value="save">Don't go to the supermarket for every shopping
+                    </option>
+                    <option value="save">Give up what drains your pocket</option>
+                    <option value="save">Do seasonal jobs, inquire in your own and surrounding city</option>
+                    <option value="save">Write down each expense in a notebook and later throw out the unnecessary</option>
+                    <option value="save">Remove 10% from each salary and pretend you don't own it</option>
+                </select>
+            </div>
+            <button class="countryDelete">Delete</button>
+            </div>
+         </div>
+        </div>
+
+        <div class="main__content">
+          <div class="inner__main container">
+            <div class="left">
+           
+
+                <!--
+                <div class="state" id="${data.population}">
+                    <img src="./images/city.jpg" alt="">
+                 
+                    <div class="description">
+                        <div class="top">
+                        </div>
+                        <div class="bottom">
+                           <p>🙋‍♂️ 234.1M people</p>
+                           <h3>Spania</h3>
+                           <span>🗣 English language</span>
+                        </div>
+                      </div>
+
+           
+
+                     <div class="details__div">
+                         <button class="detailBtn">View details</button>
+                         <button class="state__delete">Delete</button>
+                     </div>
+
+                 
+                </div>
+     -->
+      
+            
+            </div>
+
+
+            <div class="mapa" id="map">
+     
+                
+            </div>
+          </div>
+        </div>
+
+
+        <div class="forma__div hiddenForm">
+            <form class="forma">
+                <input type="number" class="country__name" min="1" placeholder="Upiši ID (proizvoljan broj)"><br>
+                <input type="date" class="date" placeholder="Datum odlaska"><br>
+                <input type="text" class="money" placeholder="Željena svota novca (€)">
+                <button type="submit" class="formSubmit">Submit</button>
+              </form>
+            
+              <div class="drops">
+                <div class="drop drop-1"></div>
+                <div class="drop drop-2"></div>
+                <div class="drop drop-3"></div>
+                <div class="drop drop-4"></div>
+                <div class="drop drop-5"></div>
+              </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<!--
+fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`).then(res=>{
+            if(!res.ok) throw new Error('Sacekajte par sekundi pa pokusajte ponovo kliknuti');
+            return res.json();
+        }).then(geoData=>{
+            const {country} = geoData;
+            console.log(country);
+
+            return fetch(`https://restcountries.com/v2/name/${country}`);
+        }).then(countryRes=>{
+            if(!countryRes.ok) throw new Error(`Country ne postoji`);
+     
+
+            return countryRes.json();
+        }).then(countryData=>{
+            
+            const [funcData] = countryData;
+
+
+            this._showMarker(funcData);
+            this._renderCountry(funcData);
+
+            this.countryExist.push(funcData);
+            this._setLocalStorage();
+        }).catch(err=>console.log(err));
+
+-->
