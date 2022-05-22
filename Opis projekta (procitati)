@@ -1,0 +1,16 @@
+# Stedi-putuj-web-App
+Web aplikacija o štednji novca za buduće putovanje i sve informacije o državi u koju putujemo.
+
+Sajt koji je namjenjen putovanjima. Nisam vidio nista slicno pa sam odabrao bas to.Jos je u izradi i ima gresaka.
+
+API za uzimanje koordinata od mjesta klika na mapi nekad zablokira pa se mora zumirati malo blize i ponovo kliknuti, ali to je korisniku objasnjeno kroz catchError poruke.
+
+- Input informacije su datum do kojeg bi zeljeli posjetiti tu drzavu i svota novca koju bi ponijeli. - Output informacije - Osnovne informacije o toj drzavi (broj stanovnika, jezik koji se prica, slika zastave itd), nacini kako sacuvati pare, koliko svaki dan treba sacuvati da bi do tog datuma skupili svotu koju zelimo, pretvaranje naseg balanca u valutu od te drzave itd...  
+
+Azuriranjem naseg balanca automatski se azuriraju i povratne informacije sto je logicno. 
+
+Kod se svodi na AJAX  / API / PROMISES / OOP. Sve je setano u local storage. 
+
+DIZAJN NIJE GOTOV, OVO JE SAMO PRIVREMENI DIZAJN, USKORO ĆE SE DORADITI.
+
+Live demo : heyz-travel-app.netlify.app/
